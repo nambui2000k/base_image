@@ -22,8 +22,7 @@ class LocalImageWidget extends StatelessWidget {
       height: height,
       width: width,
       decoration: BoxDecoration(
-        borderRadius:
-            borderRadius ?? BorderRadius.circular(0),
+        borderRadius: borderRadius ?? BorderRadius.circular(0),
         image: DecorationImage(
           image: AssetImage(
             url,

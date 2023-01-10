@@ -23,8 +23,8 @@ class SVGImageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SvgPicture.asset(
       url,
-      width: width??24,
-      height: height??24,
+      width: width ?? 24,
+      height: height ?? 24,
       color: color,
     );
   }

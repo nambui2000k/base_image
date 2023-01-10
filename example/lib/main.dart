@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'package:base_image/base_image.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
@@ -14,12 +15,11 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
   @override
   void initState() {
-    Future.delayed(Duration.zero,(){
+    Future.delayed(Duration.zero, () {
       CallNativeFlutter.getBattery().then((value) {
-        print("Your battery :"+ value.toString());
+        log("Your battery :$value");
       });
     });
     super.initState();
@@ -44,12 +44,21 @@ class _MyAppState extends State<MyApp> {
                 width: double.infinity,
                 boxFit: BoxFit.cover,
               ),
-              SizedBox(height: 50,),
+              SizedBox(
+                height: 50,
+              ),
               SVGImageWidget(url: "assets/svg_address.svg"),
-              SizedBox(height: 50,),
-              LocalImageWidget(url: "assets/png_no_image.png", height: 200,
-                width: double.infinity,),
-              SizedBox(height: 50,),
+              SizedBox(
+                height: 50,
+              ),
+              LocalImageWidget(
+                url: "assets/png_no_image.png",
+                height: 200,
+                width: double.infinity,
+              ),
+              SizedBox(
+                height: 50,
+              ),
             ],
           ),
         ),

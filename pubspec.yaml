@@ -1,6 +1,6 @@
 name: base_image
 description: BaseImage provides a full range of display formats of images :Network images, SVG images, Local images
-version: 0.0.2
+version: 0.0.4
 homepage: https://github.com/nambui2000k/base_image
 
 environment:

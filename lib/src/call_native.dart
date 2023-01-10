@@ -7,5 +7,4 @@ class CallNativeFlutter {
     final String? version = await _channel.invokeMethod('getBattery');
     return version;
   }
-
 }

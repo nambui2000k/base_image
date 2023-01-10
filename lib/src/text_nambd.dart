@@ -6,10 +6,10 @@ class TextNamBDWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(content,style: TextStyle(
-      color: Colors.green,
-      fontWeight: FontWeight.bold,
-      fontSize: 30
-    ),);
+    return Text(
+      content,
+      style: const TextStyle(
+          color: Colors.green, fontWeight: FontWeight.bold, fontSize: 30),
+    );
   }
 }
