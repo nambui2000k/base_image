@@ -1,4 +1,4 @@
-# Boilerplate Project
+# Base Image
 
 BaseImage provides a full range of display formats of images :Network images, SVG images, Local images
 
